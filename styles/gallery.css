@@ -1,15 +1,25 @@
+@import './variables.css';
+
 .swiper {
   width: 90vw;
   height: 80vh;
+  border-radius: 50px;
 }
 
 .swiper-slide img {
   object-fit: inherit;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
 main h1 {
   display: block;
-  border-bottom: 2px solid black;
+  border-bottom: 8px double var(--primary-color);
+  color: var(--secondary-color);
   margin-bottom: .8rem;
   text-align: center;
 }
+
