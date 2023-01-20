@@ -41,7 +41,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #cab9aa;
-  color: #353535
+  color: #353535;
+  margin-bottom: 3rem;
 }
 
 img {
@@ -162,6 +163,7 @@ img {
 .footer {
   background-color: #656565;
   padding: 2.5rem 5rem;
+  margin-top: 3rem;
 }
 
 .container {
@@ -219,7 +221,7 @@ ul {
 
 .footer-col li a {
   text-decoration: none;
-  color: #cab9aa;
+  color: #e0d7cf;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   text-transform: capitalize;

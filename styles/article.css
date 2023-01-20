@@ -10,6 +10,10 @@
   padding: 2.5rem;
 }
 
+.article-column h2 {
+  margin-bottom: 1rem;
+}
+
 .article-column p {
   text-align: justify;
 }

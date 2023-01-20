@@ -1,0 +1,15 @@
+.swiper {
+  width: 90vw;
+  height: 80vh;
+}
+
+.swiper-slide img {
+  object-fit: inherit;
+}
+
+main h1 {
+  display: block;
+  border-bottom: 2px solid black;
+  margin-bottom: .8rem;
+  text-align: center;
+}

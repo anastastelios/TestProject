@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel='stylesheet' href='./styles/main.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./styles/gallery.css">
 	<script src='./libraries/jquery-3.6.1.min.js'></script>
 </head>
 <body>
@@ -29,6 +31,36 @@
       </ul>
     </div>
   </header>
+  <main>
+
+    <h1>Photo Gallery</h1>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./assets/image1.jpg" alt="Image1"></div>
+        <div class="swiper-slide"><img src="./assets/image2.jpg" alt="Image2"></div>
+        <div class="swiper-slide"><img src="./assets/image3.jpg" alt="Image3"></div>
+        <div class="swiper-slide"><img src="./assets/image4.jpg" alt="Image4"></div>
+        <!-- <div class="swiper-slide"><img src="./assets/image5.jpg" alt="Image5"></div> -->
+        <div class="swiper-slide"><img src="./assets/image6.jpg" alt="Image6"></div>
+        <div class="swiper-slide"><img src="./assets/image7.jpg" alt="Image7"></div>
+        <!-- <div class="swiper-slide"><img src="./assets/image8.jpg" alt="Image8"></div> -->
+        <div class="swiper-slide"><img src="./assets/image9.jpg" alt="Image9"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -52,6 +84,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>
