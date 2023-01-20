@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 
-/* @keyframes shake {
+@keyframes shake {
   0% {
     transform: translate(0);
   }
@@ -8,19 +8,19 @@
   40%,
   60%,
   80% {
-    transform: translate(-.8rem);
+    transform: translate(-.4rem);
   }
   10%,
   30%,
   50% {
-    transform: translate(.2rem);
+    transform: translate(.1rem);
 
   }
   70%,
   100% {
     transform: translate(0);
   }
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -102,10 +102,6 @@ img {
   width: 2rem;
   height: 1.3rem;
 }
-
-/* .toggle-button:hover {
-  animation: shake 1s ease-in;
-} */
 
 .toggle-button .bar {
   height: 0.2rem;
@@ -236,6 +232,14 @@ ul {
 .footer-col img {
   height: 3rem;
   width: 3rem;
+}
+
+.social-links a {
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  animation: shake 1.5s ease-in;
 }
 
 @media (max-width: 767px) {
