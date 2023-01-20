@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+@import './variables.css';
 
 @keyframes shake {
   0% {
@@ -40,8 +41,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cab9aa;
-  color: #353535;
+  background-color: var(--bg-color);
+  /* background-color: #cab9aa; */
+  color: var(--secondary-color);
   margin-bottom: 3rem;
 }
 
@@ -67,12 +69,12 @@ img {
 }
 
 .nav__links li:hover {
-  background-color: #656565;
+  background-color: var(--light-secondary-color);
 }
 
 .nav__links li a {
   text-decoration: none;
-  color: #353535;
+  color: var(--secondary-color);
   padding: 1rem;
   display: block;
   transition: all 0.3s ease 0s;
@@ -111,7 +113,7 @@ img {
 .toggle-button .bar {
   height: 0.2rem;
   width: 100%;
-  background-color: #353535;
+  background-color: var(--secondary-color);
   border-radius: 10px;
 }
 
@@ -123,7 +125,7 @@ img {
   .nav__links {
     display: none;
     width: 100%;
-    background-color: #6c6c6c;
+    background-color: var(--dark-bg-color);
   }
   .nav__links ul {
     width: 100vw;
@@ -147,8 +149,8 @@ img {
   }
 
   .nav__links li a:hover {
-    background-color: #353535;
-    color: #cab9aa;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
   }
 
   .nav__links.active {
@@ -161,7 +163,7 @@ img {
 /* =============================== FOOTER SECTION =======================*/
 
 .footer {
-  background-color: #656565;
+  background-color: var(--light-secondary-color);
   padding: 2.5rem 5rem;
   margin-top: 3rem;
 }
@@ -200,7 +202,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #353535;
+  background-color: var(--secondary-color);
   height: 2px;
   width: 50px;
 }
