@@ -5,20 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel='stylesheet' href='main.css'>
-	<script src='libraries/jquery-3.6.1.min.js'></script>
+  <link rel='stylesheet' href='./main.css'>
+	<script src='./libraries/jquery-3.6.1.min.js'></script>
 </head>
 <body>
   <header>
-    <img class="logo" src="/assets/logo.png"/>
-    <nav>
-      <ul class="nav__links">
+    <div class="logo__container">
+      <img class="logo" src="/assets/logo.png"/>
+    </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="nav__links">
+      <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Article</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
+  <script src="./main.js"></script>
 </body>
 </html>
