@@ -88,6 +88,10 @@ img {
   height: 2.5rem;
 }
 
+.logo__container a {
+  height: inherit;
+}
+
 .logo__container img {
   height: inherit;
 }

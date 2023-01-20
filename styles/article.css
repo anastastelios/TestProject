@@ -1,0 +1,36 @@
+.article-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.article-column {
+  float: left;
+  width: 50%;
+  padding: 2.5rem;
+}
+
+.article-column p {
+  text-align: justify;
+}
+
+.article-column p img {
+  height: 200px;
+  width: 300px;
+}
+
+.article-column p img:nth-child(2n) {
+  padding: .5rem .5rem 0 0;
+  float: left;
+}
+
+.article-column p img:nth-child(2n+1) {
+  padding: .5rem 0 0 .5rem;
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .article-column {
+    width: 100%;
+  }
+}
