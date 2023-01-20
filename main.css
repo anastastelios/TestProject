@@ -45,7 +45,7 @@ img {
   color: #353535;
   padding: 1rem;
   display: block;
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
@@ -107,7 +107,7 @@ img {
   .nav__links li a {
     padding: .5rem;
     color:#fff;
-    transition: all 0.2s ease 0s;
+    transition: all 0.3s ease 0s;
   }
 
   .nav__links li a:hover {
