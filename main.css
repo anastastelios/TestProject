@@ -147,7 +147,7 @@ img {
 
   .nav__links li a:hover {
     background-color: #353535;
-    color: #fc8c2c;
+    color: #cab9aa;
   }
 
   .nav__links.active {
@@ -219,7 +219,7 @@ ul {
 
 .footer-col li a {
   text-decoration: none;
-  color: #fff;
+  color: #cab9aa;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   text-transform: capitalize;
