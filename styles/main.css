@@ -42,7 +42,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg-color);
-  /* background-color: #cab9aa; */
   color: var(--secondary-color);
   margin-bottom: 3rem;
 }
@@ -194,7 +193,7 @@ ul {
   text-transform: capitalize;
   margin-bottom: 2.5rem;
   position: relative;
-  background-color: #353535bd;
+  background-color: var(--low-op-secondary-color);
 }
 
 .footer-col h4::before {
@@ -232,6 +231,17 @@ ul {
   transition: all 0.3s ease;
 }
 
+.footer-col h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+  color: var(--bg-color);
+  background-color: var(--low-op-secondary-color);
+  padding: .25rem;
+}
+
 .row .footer-col:not(:last-child) li a:hover {
   color: #fff;
   padding-left: .5rem;
@@ -251,8 +261,26 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .footer-col {
+    padding: 0 1.5rem;
+  }
+
   .footer-col img {
     height: 2rem;
     width: 2rem;
+  }
+
+  .footer-col h5 {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+
+  .footer-col li a {
+    font-size: 1rem;
+  }
+
+  .footer h4 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
 }

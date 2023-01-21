@@ -6,10 +6,6 @@
   border-radius: 50px;
 }
 
-.swiper-slide img {
-  object-fit: inherit;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff;

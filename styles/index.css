@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+@import '/styles/variables.css';
+
+body {
+  background-color: var(--low-op-bg-color);
+}
 
 .main-page {
   margin-inline: auto;
@@ -10,7 +15,7 @@
 }
 
 .main-page .section {
-  background-color: #e0d7cf;
+  background-color: var(--low-op-primary-color);
   padding: 1rem 2rem;
   display: flex;
   padding: .8rem;
