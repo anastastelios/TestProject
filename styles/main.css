@@ -25,6 +25,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -79,7 +80,6 @@ body > header {
   padding: 1rem;
   display: block;
   transition: all 0.3s ease 0s;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
 }
 
@@ -189,7 +189,6 @@ ul {
 }
 
 .footer h4 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   color: #fff;
   text-transform: capitalize;
@@ -225,7 +224,6 @@ ul {
 .footer-col li a {
   text-decoration: none;
   color: #e0d7cf;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: 300;
@@ -234,7 +232,6 @@ ul {
 }
 
 .footer-col h5 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: 500;

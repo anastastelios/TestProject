@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 @import '/styles/variables.css';
 
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
   background-color: var(--low-op-bg-color);
 }
 
 main {
-  background-color: var(--primary-color);
+  background: linear-gradient(var(--primary-color), var(--lightest-primary-color));
 }
 
 .main-page {
@@ -19,9 +23,16 @@ main {
   margin-top: 4rem;
 }
 
-.main-page .section {
+.main-page .section:nth-child(2n) {
   margin-top: 2rem;
-  background-color: var(--lightest-primary-color);
+  background: linear-gradient(45deg, var(--lighter-primary-color), var(--dark-bg-color));
+  padding: 1rem 3rem;
+  display: flex;
+}
+
+.main-page .section:nth-child(2n+1) {
+  margin-top: 2rem;
+  background: linear-gradient(45deg, var(--dark-bg-color), var(--lighter-primary-color));
   padding: 1rem 3rem;
   display: flex;
 }
@@ -55,14 +66,12 @@ main {
 }
 
 .section p {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   text-align: justify;
 }
 
 .text-container h2 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   text-align: center;
   font-size: 2rem;

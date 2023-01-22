@@ -1,6 +1,10 @@
 @import '/styles/variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 main {
   background-color: var(--low-op-bg-color);
   margin-top: 4rem;
@@ -19,14 +23,12 @@ main {
 }
 
 .article-column h2 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .article-column p {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-align: justify;
 }
