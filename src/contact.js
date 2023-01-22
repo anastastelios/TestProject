@@ -129,6 +129,10 @@ occupationInput.addEventListener('keyup', (e) => {
   renderResults(results);
 })
 
+occupationInput.addEventListener('blur', (e) => {
+  resultsWrapper.classList.remove('show');
+});
+
 resultsWrapper.addEventListener('click', (e) => {
 	occupationInput.value = e.target.innerText;
 	occupationInput.focus();
