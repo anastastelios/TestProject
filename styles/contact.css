@@ -109,7 +109,6 @@ form .fields .input-field {
 .message-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -163,6 +162,12 @@ form .fields .input-field {
 @media (max-width: 767px) {
   form .fields .input-field {
     width: calc(100% / 2 - 1rem);
+  }
+}
+
+@media (max-width: 545px) {
+  form .fields .input-field {
+    width: 100%;
   }
 }
 

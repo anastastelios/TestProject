@@ -92,6 +92,29 @@ main {
   }
 }
 
+@media (max-width: 333px) {
+  .main-page .section div.text-container img {
+    width: 250px;
+    height: 175px;
+  }
+
+  div.text-container {
+    width: 250px;
+  }
+}
+
+@media (max-width: 260px) {
+  .main-page .section div.text-container img {
+    width: 200px;
+    height: 135px;
+  }
+
+  div.text-container {
+    width: 200px;
+  }
+}
+
+
 /* ================= Dialog OneTime =============*/
 
 .popup-overlay {
