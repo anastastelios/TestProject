@@ -106,6 +106,15 @@ form .fields .input-field {
   margin: .25rem 0;
 }
 
+form .fields .message.details .input-field {
+  display: flex;
+  width: calc(100% - 4rem);
+  flex-direction: column;
+  background-color: aqua;
+  justify-content: center;
+  margin: .25rem 0;
+}
+
 .input-field label {
   font-size: 0.8rem;
   font-weight: 300;
@@ -153,11 +162,6 @@ form .fields .input-field {
   flex-direction: column;
 }
 
-textarea#message {
-  min-width: 70vw;
-  max-width: 800px;
-}
-
 @media (max-width: 767px) {
   form .fields .input-field {
     width: calc(100% / 2 - 1rem);
@@ -184,6 +188,7 @@ textarea#message {
     color: #fff;
   }
 }
+
 
 /*                        POP-UP                     */
 
