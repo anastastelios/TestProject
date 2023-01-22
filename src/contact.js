@@ -130,7 +130,7 @@ occupationInput.addEventListener('keyup', (e) => {
 })
 
 occupationInput.addEventListener('blur', (e) => {
-  resultsWrapper.classList.remove('show');
+  resultsWrapper.classList.remove('has-matches');
 });
 
 resultsWrapper.addEventListener('click', (e) => {
