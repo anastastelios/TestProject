@@ -129,6 +129,12 @@ occupationInput.addEventListener('keyup', (e) => {
   renderResults(results);
 })
 
+occupationInput.addEventListener('focus', (e) => {
+  if (resultsWrapper.innerHTML !== '') {
+    resultsWrapper.classList.add('has-matches');
+  }
+});
+
 resultsWrapper.addEventListener('click', (e) => {
 	occupationInput.value = e.target.innerText;
 	occupationInput.focus();
@@ -141,10 +147,6 @@ $(document).on("click", function(e) {
     resultsWrapper.classList.remove('has-matches');
   }
 });
-
-
-
-
 
 
 /////////////// Date picker restriction 18 and 137 ////////////////////
