@@ -106,8 +106,8 @@ form .fields .input-field {
   margin: .25rem 0;
 }
 
-.results.has-matches ul {
-  width: calc(100% / 3 - 3rem);
+#occupation .results.has-matches ul {
+  width: 100%;
 }
 
 .message-wrapper {
@@ -131,6 +131,18 @@ form .fields .input-field {
   padding: 0 1rem;
   height: 2.5rem;
   margin: .5rem 0;
+}
+
+#phone {
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--secondary-color);
+  border-radius: 6px;
+  border: 1px solid var(--dark-bg-color);
+  height: 2.5rem;
+  margin: .5rem 0;
+  width: 100%;
 }
 
 .input-field input:is(:focus, :valid) {
@@ -169,7 +181,7 @@ form .fields .input-field {
   }
 
   .results.has-matches ul {
-    width: calc(100% / 2 - 2rem);
+    width: 100%;
   }
 }
 
@@ -181,7 +193,7 @@ form .fields .input-field {
 }
 
 @media (min-width: 767px) {
-  .nav-links ul li {
+  .nav-links > ul > li {
     width: 125px;
     text-align: center;
   }
@@ -291,6 +303,9 @@ form:has(.invalid) .submit-btn {
 
 .results {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .results ul {
@@ -304,7 +319,10 @@ form:has(.invalid) .submit-btn {
 }
 
 .results.has-matches ul {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
   display: block;
   z-index: 10;
 }

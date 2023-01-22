@@ -82,6 +82,24 @@ const phoneInput = window.intlTelInput(phoneInputField, {
     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
 
+// phoneInputField.addEventListener('change', (e) => {
+//   $('#phone').innerText = `+${phoneInput.b.dataset.dialCode}${$('#phone').value}`
+// })
+phoneInputField.value = '+30';
+
+phoneInputField.addEventListener('keyup', (e) => {
+  if (isNaN(+e.key)) {
+    e.preventDefault();
+    phoneInputField.value = Array.from(phoneInputField.value).splice(0, phoneInputField.value.length-1).join('');
+  }
+})
+
+document.querySelector('.iti__selected-flag').addEventListener('blur', (e) => {
+  phoneInputField.value = `+${e.target.title.split(': ')[1]}`
+});
+
+console.log(phoneInput.b.dataset.countyCode);
+console.log(phoneInput.b.dataset.dialCode);
 
 ////////////////////////// Autocomplete dropdown for Occupation ////////////////////////
 
