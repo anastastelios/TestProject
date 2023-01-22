@@ -153,9 +153,9 @@ form .fields .input-field {
   flex-direction: column;
 }
 
-textarea {
-  min-width: 80vw;
-  max-width: 95vw;
+textarea#message {
+  min-width: 70vw;
+  max-width: 800px;
 }
 
 @media (max-width: 767px) {
