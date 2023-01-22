@@ -1,5 +1,6 @@
 import countries from '../data/countriesStates.js';
 import data from '../data/nationalities.json' assert {type:'json'};
+import occupations from '../data/occupationsList.js';
 
 ///////////////////////////// Form Validation /////////////////
 
@@ -80,3 +81,46 @@ const phoneInput = window.intlTelInput(phoneInputField, {
   utilsScript:
     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
+
+
+////////////////////////// Autocomplete dropdown for Occupation ////////////////////////
+
+const occupationInput = document.getElementById('occupation');
+const occupationWrapper = document.querySelector('.input-field.occupation');
+const resultsWrapper = document.querySelector('.results');
+
+const renderResults = (results) => {
+  if(!results.length) {
+    resultsWrapper.classList.remove('has-matches');
+    return occupationWrapper.classList.remove('show');
+  }
+
+  const content = results.slice(0,4).map((item) => {
+    return `<li>${item}</li>`;
+  }).join('');
+  occupationWrapper.classList.add('show');
+  resultsWrapper.classList.add('has-matches');
+  resultsWrapper.innerHTML = `<ul>${content}</ul>`
+  console.log(resultsWrapper)
+
+}
+
+occupationInput.addEventListener('keyup', (e) => {
+  let results = [];
+  const input = e.target.value;
+  if (input.length) {
+    results = occupations.filter((o) => {
+      return o.toLowerCase().includes(input.toLowerCase());
+    })
+  }
+
+  renderResults(results);
+})
+
+resultsWrapper.addEventListener('click', (e) => {
+	occupationInput.value = e.target.innerText;
+	occupationInput.focus();
+	resultsWrapper.innerHTML = '';
+	resultsWrapper.classList.remove('has-matches');
+});
+

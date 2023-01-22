@@ -106,6 +106,10 @@ form .fields .input-field {
   margin: .25rem 0;
 }
 
+.results.has-matches ul {
+  width: calc(100% / 3 - 3rem);
+}
+
 .message-wrapper {
   display: flex;
   flex-direction: column;
@@ -163,10 +167,15 @@ form .fields .input-field {
   form .fields .input-field {
     width: calc(100% / 2 - 1rem);
   }
+
+  .results.has-matches ul {
+    width: calc(100% / 2 - 2rem);
+  }
 }
 
 @media (max-width: 545px) {
-  form .fields .input-field {
+  form .fields .input-field,
+  .results.has-matches ul {
     width: 100%;
   }
 }
@@ -275,4 +284,37 @@ form:has(.invalid) .submit-btn {
   .message textarea {
     width: 850px;
   }
+}
+
+
+/* ======================= Occupation Search =====================*/
+
+.results {
+  position: relative;
+}
+
+.results ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.results.has-matches ul {
+  position: fixed;
+  display: block;
+  z-index: 10;
+}
+
+.results ul li {
+  padding: 0 .8px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.results ul li:hover {
+  background-color: var(--lighter-primary-color);
 }
