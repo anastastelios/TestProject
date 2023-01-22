@@ -10,9 +10,9 @@
 
 .swiper img {
   width: 100%;
-  height: auto;
+  height: 100vh;
   object-fit: cover;
-  object-position: center;
+  object-position: initial;
 }
 
 .swiper-button-prev,
