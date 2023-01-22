@@ -118,13 +118,14 @@ main {
   height: 100%;
 }
 
-button {
+a button {
   display: inline-block;
   vertical-align: middle;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3rem;
+  min-width: 120px;
   max-width: 250px;
   width: 100%;
   border: none;
@@ -137,7 +138,7 @@ button {
   cursor: pointer;
 }
 
-button a {
+.popup-content a {
   text-decoration: none;
   color: #fff;
 }
