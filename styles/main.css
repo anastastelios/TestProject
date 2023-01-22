@@ -48,7 +48,7 @@ body > header {
   margin-bottom: 3rem;
 }
 
-img {
+.logo-container img {
   cursor: pointer;
 }
 
