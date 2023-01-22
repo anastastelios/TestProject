@@ -1,7 +1,23 @@
 import countries from '../data/countriesStates.js';
 import data from '../data/nationalities.json' assert {type:'json'};
 
+///////////////////////////// Form Validation /////////////////
 
+$('#select-nationality').change((e) => {
+  e.preventDefault();
+  var target = e.currentTarget
+  if (target.value !== "" || target.value.length > 0) {
+    target.classList.remove("invalid");
+    target.classList.add("valid");
+  } else {
+    target.classList.add("invalid");
+    target.classList.remove("valid");
+  }
+})
+
+$("form").submit((e) => {
+  e.preventDefault();
+});
 
 //////////////////////////////// Load countries dropdown //////////////////////////
 const populateSelect = () => {
@@ -28,12 +44,12 @@ $('#select-country').on('change', function(e) {
   const countryId = $(this).find('option:selected')[0].index-1;
   
   const currentStates = Object.values(countries)[countryId];
-  (countryId > -1 && currentStates.length > 0) ? $('#select-state').prop("disabled", false) : $('#select-state').prop("disabled", true);
-  (currentStates.length > 0) && currentStates.forEach((state) => {
+  (countryId > -1 && currentStates?.length > 0) ? $('#select-state').prop("disabled", false) : $('#select-state').prop("disabled", true);
+  (currentStates?.length > 0) && currentStates?.forEach((state) => {
     const stateOption = $("<option>").text(state);
     $('#select-state').append(stateOption);
   });
-  (currentStates.length === 0) && $('#select-state').append($("<option>").text('Skip this...'));
+  (currentStates?.length === 0) && $('#select-state').append($("<option>").text('Skip this...'));
 });
 
 
@@ -44,15 +60,7 @@ data.forEach((country) => {
     $('#select-nationality').append(nationalityOption);
 })
 
-
-/////////////////////////
-
-// const contactForm = document.getElementsByTagName('form')[0];
-// console.log(contactForm)
-// contactForm.addEventListener('submit', () => {
-//   alert('Hello')
-// })
-
+///////////////////////////// Submit Dialog //////////////////////////////
 
 
 $(".submit-btn").on("click", function() {
@@ -63,3 +71,4 @@ $(".submit-btn").on("click", function() {
 $(".close, .popup-overlay").on("click", function() {
   $(".popup-overlay, .popup-content").removeClass("active");
 });
+

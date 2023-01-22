@@ -52,15 +52,17 @@ main {
   }
 }
 
-.nav-links ul li {
-  width: 125px;
-  text-align: center;
-}
+@media screen and (min-width: 767px) {
+  .nav-links ul li {
+    width: 125px;
+    text-align: center;
+  }
 
-.nav-links li:nth-child(2) a::before {
-  content: '*';
-  position: relative;
-  left: 30%;
-  bottom: 16px;
-  color: #fff;
+  .nav-links li:nth-child(2) a::before {
+    content: '*';
+    position: relative;
+    left: 30%;
+    bottom: 16px;
+    color: #fff;
+  }
 }

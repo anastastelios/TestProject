@@ -147,6 +147,17 @@ form .fields .input-field {
   margin: .5rem 0;
 }
 
+.message {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+textarea {
+  min-width: 80vw;
+  max-width: 95vw;
+}
+
 @media (max-width: 767px) {
   form .fields .input-field {
     width: calc(100% / 2 - 1rem);
@@ -159,17 +170,19 @@ form .fields .input-field {
   }
 }
 
-.nav-links ul li {
-  width: 125px;
-  text-align: center;
-}
+@media (min-width: 767px) {
+  .nav-links ul li {
+    width: 125px;
+    text-align: center;
+  }
 
-.nav-links li:last-child a::before {
-  content: '*';
-  position: relative;
-  left: 45%;
-  bottom: 16px;
-  color: #fff;
+  .nav-links li:last-child a::before {
+    content: '*';
+    position: relative;
+    left: 45%;
+    bottom: 16px;
+    color: #fff;
+  }
 }
 
 /*                        POP-UP                     */
@@ -202,6 +215,9 @@ form .fields .input-field {
   visibility: visible;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 button {
@@ -211,14 +227,19 @@ button {
   margin: .20rem;
   font-size: 1rem;
   color: var(--secondary-color);
-  background: #ffffff;
+  background: #fff;
   border: 1px solid var(--secondary-color);
 }
 
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 button:hover {
-  border: 1px solid #666666;
-  background: #666666;
-  color: #ffffff;
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  color: #fff;
 }
 
 
@@ -227,4 +248,26 @@ button:hover {
 form:invalid .submit-btn {
   pointer-events: none;
   background-color: var(--bg-color);
+}
+
+form:has(.invalid) .submit-btn {
+  pointer-events: none;
+  background-color: var(--bg-color);
+}
+
+.message textarea {
+  outline: none;
+  resize: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--secondary-color);
+  border-radius: 6px;
+  border: 1px solid var(--dark-bg-color);
+  padding: 1rem;
+  height: 10rem;
+  margin: .5rem 0;
+}
+
+.message textarea:is(:focus, :valid) {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }

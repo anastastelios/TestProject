@@ -263,6 +263,10 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .footer {
+    padding: 1.5rem 3rem;
+  }
+
   .footer-col {
     padding: 0 1.5rem;
   }
@@ -284,5 +288,48 @@ ul {
   .footer h4 {
     font-size: 1rem;
     margin-bottom: 2rem;
+  }
+
+  .footer-col h4::before {
+    width: 35px;
+  }
+}
+
+@media (max-width: 545px) {
+  .footer {
+    padding: 1rem 2rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    padding: 0 .3rem;
+    flex-basis: 100%;
+  }
+
+  .footer-col img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .footer-col h5 {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+
+  .footer-col li a {
+    font-size: 1rem;
+  }
+
+  .footer h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-col h4::before {
+    width: 25px;
   }
 }

@@ -1,10 +1,16 @@
 @import './variables.css';
 
 .swiper {
+  position: relative;
   width: 90vw;
   height: 80vh;
   border-radius: 50px;
   margin-bottom: 2rem;
+}
+
+.swiper-slide {
+  width: inherit;
+  height: inherit;
 }
 
 .swiper-button-prev,
@@ -24,15 +30,17 @@ main h1 {
   text-align: center;
 }
 
-.nav-links ul li {
-  width: 125px;
-  text-align: center;
-}
+@media screen and (min-width: 767px) {
+  .nav-links ul li {
+    width: 125px;
+    text-align: center;
+  }
 
-.nav-links li:nth-child(3) a::before {
-  content: '*';
-  position: relative;
-  left: 33%;
-  bottom: 16px;
-  color: #fff;
+  .nav-links li:nth-child(3) a::before {
+    content: '*';
+    position: relative;
+    left: 33%;
+    bottom: 16px;
+    color: #fff;
+  }
 }

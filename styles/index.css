@@ -68,15 +68,86 @@ main {
   font-size: 2rem;
 }
 
-.nav-links ul li {
-  width: 125px;
+@media screen and (min-width: 767px) {
+  .nav-links ul li {
+    width: 125px;
+    text-align: center;
+  }
+
+  .nav-links li:first-child a::before {
+    content: '*';
+    position: relative;
+    left: 30%;
+    bottom: 16px;
+    color: #fff;
+  }
+}
+
+/* ================= Dialog OneTime =============*/
+
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  position: absolute;
+  background: #fff;
+  border: 3px solid var(--secondary-color);
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  margin-top: 4rem;
+}
+
+.popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
   text-align: center;
 }
 
-.nav-links li:first-child a::before {
-  content: '*';
-  position: relative;
-  left: 30%;
-  bottom: 16px;
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  max-width: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
   color: #fff;
+  border-radius: 6px;
+  margin: 1.5rem auto;
+  background-color: var(--primary-color);
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  background: var(--lighter-primary-color);
+  color: #fff;
+}
+
+.home-btn {
+  margin-top: -1rem;
+  background-color: var(--dark-bg-color);
 }
