@@ -138,12 +138,13 @@ img {
     align-items: flex-start;
   }
 
-  .nav-links li {
+  .nav-links ul li {
     text-align: center;
+    position: relative;
     margin-left: 0;
   }
 
-  .nav-links li a {
+  .nav-links ul li a {
     padding: .5rem;
     color:#fff;
     transition: all 0.3s ease 0s;

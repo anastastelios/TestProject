@@ -24,3 +24,15 @@ main h1 {
   text-align: center;
 }
 
+.nav-links ul li {
+  width: 125px;
+  text-align: center;
+}
+
+.nav-links li:nth-child(3) a::before {
+  content: '*';
+  position: relative;
+  left: 33%;
+  bottom: 16px;
+  color: #fff;
+}

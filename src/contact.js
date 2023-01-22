@@ -43,3 +43,23 @@ data.forEach((country) => {
   const nationalityOption = $("<option>").text(country.nationality);
     $('#select-nationality').append(nationalityOption);
 })
+
+
+/////////////////////////
+
+// const contactForm = document.getElementsByTagName('form')[0];
+// console.log(contactForm)
+// contactForm.addEventListener('submit', () => {
+//   alert('Hello')
+// })
+
+
+
+$(".submit-btn").on("click", function() {
+  $(".popup-overlay, .popup-content").addClass("active");
+});
+
+
+$(".close, .popup-overlay").on("click", function() {
+  $(".popup-overlay, .popup-content").removeClass("active");
+});

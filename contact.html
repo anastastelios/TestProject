@@ -7,6 +7,7 @@
   <title>Contact Page</title>
   <link rel='stylesheet' href='./styles/main.css'>
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./libraries/jquery.mobile-1.4.5.min.css">
 </head>
 <body>
   <header>
@@ -103,7 +104,50 @@
                   <label>Postal Code *</label>
                   <input type="number" placeholder="Enter postal code" required>
                 </div>
-                <button type="submit">Submit</button>
+                <!-- <button type="submit">Submit</button> -->
+                
+
+                <!-- <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b submit-btn">Submit</a>
+                <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:314px;">
+                  <div data-role="header" data-theme="a">
+                    <h2>Form Submitted</h2>
+                  </div>
+                  <div role="main" class="ui-content">
+                    <h5 class="ui-title">Form is submitted</h5>
+                    <p>We will contact you back as soon as possible!</p>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b close-btn" data-rel="back">Close</a>
+                  </div>
+                </div> -->
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+
+            <div class="message details">
+              <span class="title">Your Message</span>
+              <div class="fields">
+                <div class="input-field">
+                  <!-- <label>Your Message</label> -->
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                                <!--Creates the popup body-->
+<div class="popup-overlay">
+  <!--Creates the popup content-->
+  <div class="popup-content">
+    <h2>Form Submitted</h2>
+    <p>We will contact you back as soon as possible!</p>
+    <!--popup's close button-->
+    <button class="close">Close</button>
+  </div>
+</div>
+<!--Content shown when popup is not displayed-->
+<button type='submit' class="submit-btn">Submit</button>
               </div>
             </div>
           </form>
@@ -135,6 +179,7 @@
     </div>
   </footer>
   <script src='./libraries/jquery-3.6.1.min.js'></script>
+  <script src='./libraries/jquery.mobile-1.4.5.min.js'></script>
   <script type="module" src="./main.js"></script>
   <script type="module" src="./src/contact.js"></script>
 </body>

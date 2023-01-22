@@ -158,3 +158,73 @@ form .fields .input-field {
     width: 100%;
   }
 }
+
+.nav-links ul li {
+  width: 125px;
+  text-align: center;
+}
+
+.nav-links li:last-child a::before {
+  content: '*';
+  position: relative;
+  left: 45%;
+  bottom: 16px;
+  color: #fff;
+}
+
+/*                        POP-UP                     */
+
+
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  position: absolute;
+  background: #fff;
+  border: 3px solid var(--secondary-color);
+  width: 50%;
+  height: 50%;
+  left: 25%;
+}
+
+.popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 30px;
+  margin: .20rem;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  background: #ffffff;
+  border: 1px solid var(--secondary-color);
+}
+
+button:hover {
+  border: 1px solid #666666;
+  background: #666666;
+  color: #ffffff;
+}
+
+
+/* FORM VALIDATION */
+
+form:invalid .submit-btn {
+  pointer-events: none;
+  background-color: var(--bg-color);
+}

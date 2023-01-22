@@ -3,6 +3,7 @@
 
 main {
   background-color: var(--low-op-bg-color);
+  margin-top: 4rem;
 }
 
 .article-row:after {
@@ -49,4 +50,17 @@ main {
   .article-column {
     width: 100%;
   }
+}
+
+.nav-links ul li {
+  width: 125px;
+  text-align: center;
+}
+
+.nav-links li:nth-child(2) a::before {
+  content: '*';
+  position: relative;
+  left: 30%;
+  bottom: 16px;
+  color: #fff;
 }
