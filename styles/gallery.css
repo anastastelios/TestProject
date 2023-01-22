@@ -26,6 +26,7 @@ body > main > .wrapper {
 
 main h1 {
   display: block;
+  border-top: 8px double var(--primary-color);
   border-bottom: 8px double var(--primary-color);
   color: var(--secondary-color);
   margin-bottom: .8rem;
