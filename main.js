@@ -1,9 +1,16 @@
+//////////////////////////////////// HAMBURGER MENU //////////////////////////////////
+
 const toggleBtn = document.getElementsByClassName("toggle-button")[0];
 const navLinks = document.getElementsByClassName("nav-links")[0];
 
 toggleBtn.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+
+
+////////////////////////////////////////// GALLERY PAGE /////////////////////////////////////
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -26,3 +33,5 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+

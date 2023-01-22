@@ -11,6 +11,10 @@
   color: #fff;
 }
 
+body > main > .wrapper {
+  margin-top: 8rem;
+}
+
 main h1 {
   display: block;
   border-bottom: 8px double var(--primary-color);

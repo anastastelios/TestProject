@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Page</title>
   <link rel='stylesheet' href='./styles/main.css'>
-	<script src='./libraries/jquery-3.6.1.min.js'></script>
+  <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
   <header>
@@ -29,6 +29,88 @@
       </ul>
     </div>
   </header>
+  <main>
+    <div class="wrapper">
+      <div class="container">
+        <header>Contact Us</header>
+          <form action="#">
+            <div class="contact-form">
+              <div class="personal details">
+                <span class="title">Personal Details</span>
+                <div class="fields">
+                  <div class="input-field">
+                    <label for="">Full Name *</label>
+                    <input type="text" placeholder="Type your Name" required>
+                  </div>
+                  <div class="input-field">
+                    <label for="">Date of Birth *</label>
+                    <input type="date" placeholder="Enter Birth Date" required>
+                  </div>
+                  <div class="input-field">
+                    <label for="">e-mail *</label>
+                    <input type="text" placeholder="Type your email" required>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="">Mobile Number *</label>
+                    <input type="number" placeholder="Type mobile number" required>
+                  </div>
+                  <div class="input-field">
+                    <label for="">Gender *</label>
+                    <select name="gender" id="gender">
+                      <option value="divers">Divers</option>
+                      <option value="female">Female</option>
+                      <option value="male">Male</option>
+                    </select>
+                    <input type="text" placeholder="Enter your Gender" required>
+                  </div>
+                  <div class="input-field">
+                    <label for="">Occupation *</label>
+                    <input type="text" placeholder="Enter your occupation" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="address details">
+              <span class="title">Address Details</span>
+              <div class="fields">
+                <div class="input-field">
+                  <label for="">Nationality *</label>
+                  <input type="text" placeholder="Type your nationality" required>
+                </div>
+                <div class="input-field">
+                  <label for="">Country *</label>
+                  <select name="country" id="select-country" required>
+                    <option value="null">--Choose your country--</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <label for="">State</label>
+                  <select name="state" id="select-state">
+                    
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <label for="">Street Name *</label>
+                  <input type="text" placeholder="Enter street name" required>
+                </div>
+                <div class="input-field">
+                  <label for="">Street Number *</label>
+                  <input type="text" placeholder="Enter street number" required>
+                </div>
+                <div class="input-field">
+                  <label for="">Postal Code *</label>
+                  <input type="number" placeholder="Enter postal code" required>
+                </div>
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -53,6 +135,8 @@
       </div>
     </div>
   </footer>
-  <script src="./main.js"></script>
+  <script src='./libraries/jquery-3.6.1.min.js'></script>
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./src/contact.js"></script>
 </body>
 </html>
