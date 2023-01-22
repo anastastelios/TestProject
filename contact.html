@@ -8,6 +8,11 @@
   <link rel='stylesheet' href='./styles/main.css'>
   <link rel="stylesheet" href="./styles/contact.css">
   <link rel="icon" type="image/x-icon" href="./assets/logo.jpg">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 <body>
   <header>
@@ -54,7 +59,7 @@
 
                   <div class="input-field">
                     <label>Mobile Number *</label>
-                    <input type="number" placeholder="Type mobile number" required>
+                    <input id="phone" type="tel" name="phone" placeholder="Type mobile number" required>
                   </div>
                   <div class="input-field">
                     <label>Gender *</label>
