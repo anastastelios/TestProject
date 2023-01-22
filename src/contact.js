@@ -21,8 +21,8 @@ $("form").submit((e) => {
 });
 
 //////////////////////////////// Load countries dropdown //////////////////////////
-const populateSelect = () => {
 
+const populateSelect = () => {
   const countriesList = Object.keys(countries);
 
   const countySelect = document.getElementById('select-country');
@@ -35,10 +35,8 @@ const populateSelect = () => {
 
 window.onload = populateSelect();
 
-
-
-
 //////////////////////////// Load States of Selected Country ////////////////////////
+
 $('#select-state').prop("disabled", true);
 $('#select-country').on('change', function(e) {
   $('#select-state').empty();
