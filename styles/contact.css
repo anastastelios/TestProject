@@ -145,7 +145,7 @@ form .fields .input-field {
   width: 100%;
 }
 
-.input-field input:is(:focus, :valid) {
+.input-field input:is(:focus) {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -288,7 +288,7 @@ form:has(.invalid) .submit-btn {
   margin: .5rem 0;
 }
 
-.message textarea:is(:focus, :valid) {
+.message textarea:is(:focus) {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
