@@ -13,7 +13,3 @@ if (!localStorage.getItem("runOnce")) {
 $(".contact-btn, .popup-overlay").on("click", () => {
   $(".popup-overlay, .popup-content").removeClass("active");
 });
-
-// $(".popup-overlay").bind('clickoutside', ()=> {
-//   $(".popup-overlay").dialog('close');
-// });
