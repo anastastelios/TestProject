@@ -142,3 +142,14 @@ resultsWrapper.addEventListener('click', (e) => {
 	resultsWrapper.classList.remove('has-matches');
 });
 
+
+/////////////// Date picker restriction 18 and 137 ////////////////////
+
+const todayArray = new Date().toISOString().split('T')[0].split('-');
+const years18Array = `${todayArray[0]-18}-${todayArray[1]}-${todayArray[2]}`
+const years137Array = `${todayArray[0]-137}-${todayArray[1]}-${todayArray[2]}`
+console.log(years18Array)
+
+const birthInput = document.querySelector('#birth');
+birthInput.setAttribute('min', years137Array);
+birthInput.setAttribute('max', years18Array);
