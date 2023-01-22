@@ -82,9 +82,8 @@ const phoneInput = window.intlTelInput(phoneInputField, {
     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
 
-// phoneInputField.addEventListener('change', (e) => {
-//   $('#phone').innerText = `+${phoneInput.b.dataset.dialCode}${$('#phone').value}`
-// })
+
+///////////// Phone input validation ////////////////////////
 phoneInputField.value = '+30';
 
 phoneInputField.addEventListener('keyup', (e) => {
@@ -97,9 +96,6 @@ phoneInputField.addEventListener('keyup', (e) => {
 document.querySelector('.iti__selected-flag').addEventListener('blur', (e) => {
   phoneInputField.value = `+${e.target.title.split(': ')[1]}`
 });
-
-console.log(phoneInput.b.dataset.countyCode);
-console.log(phoneInput.b.dataset.dialCode);
 
 ////////////////////////// Autocomplete dropdown for Occupation ////////////////////////
 
@@ -119,7 +115,6 @@ const renderResults = (results) => {
   occupationWrapper.classList.add('show');
   resultsWrapper.classList.add('has-matches');
   resultsWrapper.innerHTML = `<ul>${content}</ul>`
-  console.log(resultsWrapper)
 
 }
 
@@ -148,7 +143,6 @@ resultsWrapper.addEventListener('click', (e) => {
 const todayArray = new Date().toISOString().split('T')[0].split('-');
 const years18Array = `${todayArray[0]-18}-${todayArray[1]}-${todayArray[2]}`
 const years137Array = `${todayArray[0]-137}-${todayArray[1]}-${todayArray[2]}`
-console.log(years18Array)
 
 const birthInput = document.querySelector('#birth');
 birthInput.setAttribute('min', years137Array);
