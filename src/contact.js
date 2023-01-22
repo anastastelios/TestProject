@@ -84,6 +84,7 @@ const phoneInput = window.intlTelInput(phoneInputField, {
 
 
 ///////////// Phone input validation ////////////////////////
+
 phoneInputField.value = '+30';
 
 phoneInputField.addEventListener('keyup', (e) => {
