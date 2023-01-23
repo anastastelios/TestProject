@@ -166,35 +166,3 @@ const years137Array = `${todayArray[0] - 137}-${todayArray[1]}-${
 const birthInput = document.querySelector('#birth');
 birthInput.setAttribute('min', years137Array);
 birthInput.setAttribute('max', years18Array);
-
-//////////////////////////// ZIP CODE API ////////////////////////
-// const params = {
-//   api_token: ,
-//   zipcode_district:
-// }
-// const API_URL = 'https://georocket.net/api/street_names'
-// fetch(API_URL, params).then((response) => {
-//   const data = response.json();
-// })
-
-// const countryEl = document.querySelector('#select-country');
-// const stateEl = document.querySelector('#select-state');
-// countryEl.addEventListener('change', (e) => {
-//   const countrySelected = data.find((country) => {
-//     return countryEl.value.includes(country.en_short_name);
-//     const nationalityOption = $("<option>").text(country.nationality);
-//       $('#select-nationality').append(nationalityOption);
-//   })
-//   const countryCode = countrySelected.alpha_2_code;
-//   const currentZipCodes = zipCodes.filter((zipCodeItm) => {
-//     return zipCodeItm.country_code.includes(countryCode);
-//   })
-//   console.log(currentZipCodes)
-//   const stateZipCodes = zipCodes.filter((zipCodeItm) => {
-//     console.log({state: stateEl.value});
-//     console.log(zipCodeItm.admin_name1)
-
-//     return zipCodeItm.admin_name1 && zipCodeItm.admin_name1.includes(stateEl.value);
-//   })
-//   console.log(stateZipCodes)
-// })
