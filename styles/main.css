@@ -100,8 +100,8 @@ body > header {
 
 .toggle-button {
   position: absolute;
-  top: 1.5rem;
-  right: 1rem;
+  top: 1.6rem;
+  right: 2.5rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
