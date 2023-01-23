@@ -29,11 +29,11 @@ main h1 {
   border-top: 8px double var(--primary-color);
   border-bottom: 8px double var(--primary-color);
   color: var(--secondary-color);
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 
-@media (min-width: var(--md-screen)) {
+@media (min-width: 767px) {
   .nav-links ul li {
     width: 125px;
     text-align: center;

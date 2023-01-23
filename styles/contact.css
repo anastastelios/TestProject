@@ -64,10 +64,10 @@ body {
 
 .container form .title {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   color: var(--secondary-color);
 }
 
@@ -103,7 +103,7 @@ form .fields .input-field {
   display: flex;
   width: calc(100% / 3 - 1rem);
   flex-direction: column;
-  margin: .25rem 0;
+  margin: 0.25rem 0;
 }
 
 #occupation .results.has-matches ul {
@@ -130,7 +130,7 @@ form .fields .input-field {
   border: 1px solid var(--dark-bg-color);
   padding: 0 1rem;
   height: 2.5rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 #phone {
@@ -141,7 +141,7 @@ form .fields .input-field {
   border-radius: 6px;
   border: 1px solid var(--dark-bg-color);
   height: 2.5rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   width: 100%;
 }
 
@@ -166,7 +166,7 @@ form .fields .input-field {
   border: 1px solid var(--dark-bg-color);
   padding: 0 1rem;
   height: 2.5rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .message.details {
@@ -175,7 +175,7 @@ form .fields .input-field {
   justify-content: center;
 }
 
-@media (max-width: var(--md-screen)) {
+@media (max-width: 767px) {
   form .fields .input-field {
     width: calc(100% / 2 - 1rem);
   }
@@ -185,14 +185,14 @@ form .fields .input-field {
   }
 }
 
-@media (max-width: var(--sm-screen)) {
+@media (max-width: 545px) {
   form .fields .input-field,
   .results.has-matches ul {
     width: 100%;
   }
 }
 
-@media (min-width: var(--md-screen)) {
+@media (min-width: 767px) {
   .nav-links > ul > li {
     width: 125px;
     text-align: center;
@@ -207,9 +207,7 @@ form .fields .input-field {
   }
 }
 
-
 /*                        POP-UP                     */
-
 
 .popup-overlay {
   visibility: hidden;
@@ -243,7 +241,7 @@ button {
   display: inline-block;
   vertical-align: middle;
   border-radius: 30px;
-  margin: .20rem;
+  margin: 0.2rem;
   font-size: 1rem;
   color: var(--secondary-color);
   background: #fff;
@@ -260,7 +258,6 @@ button:hover {
   background: var(--secondary-color);
   color: #fff;
 }
-
 
 /* FORM VALIDATION */
 
@@ -285,19 +282,18 @@ form:has(.invalid) .submit-btn {
   padding: 1rem;
   height: 10rem;
   width: 90vw;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .message textarea:is(:focus) {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: var(--lg-screen)) {
+@media (min-width: 1024px) {
   .message textarea {
     width: 850px;
   }
 }
-
 
 /* ======================= Occupation Search =====================*/
 
@@ -328,7 +324,7 @@ form:has(.invalid) .submit-btn {
 }
 
 .results ul li {
-  padding: 0 .8px;
+  padding: 0 0.8px;
   cursor: pointer;
   background: #fff;
 }
@@ -337,8 +333,7 @@ form:has(.invalid) .submit-btn {
   background-color: var(--lighter-primary-color);
 }
 
-
-@media (max-width: var(--md-screen)) {
+@media (max-width: 767px) {
   .popup-overlay {
     visibility: hidden;
     position: absolute;
@@ -350,7 +345,7 @@ form:has(.invalid) .submit-btn {
   }
 }
 
-@media (max-width: var(--sm-screen)) {
+@media (max-width: 545px) {
   .popup-overlay {
     visibility: hidden;
     position: absolute;
