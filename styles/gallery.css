@@ -33,7 +33,7 @@ main h1 {
   text-align: center;
 }
 
-@media (min-width: 767px) {
+@media (min-width: var(--md-screen)) {
   .nav-links ul li {
     width: 125px;
     text-align: center;

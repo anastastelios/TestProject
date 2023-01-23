@@ -1,4 +1,5 @@
 :root {
+  /* Color Pallette */
   --primary-color: #f96c04;
   --secondary-color: #353535;
   --low-op-secondary-color: #353535bd;
@@ -11,4 +12,11 @@
   --low-op-primary-color: #f96a0465;
   --lightest-primary-color: #f4ac6b;
   --form-bg-color: #f2f2f2;
+
+  /* Screen Sizes */
+  --tn-screen: 333px;
+  --sm-screen: 545px;
+  --md-screen: 767px;;
+  --lg-screen: 1024px;
+  --hg-screen: 1200px;
 }

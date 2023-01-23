@@ -118,7 +118,7 @@ body > header {
   border-radius: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--md-screen)) {
   .toggle-button {
     display: flex;
   }
@@ -259,7 +259,7 @@ ul {
   animation: shake 1.5s ease-in;
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--md-screen)) {
   .footer {
     padding: 1.5rem 3rem;
   }
@@ -292,7 +292,7 @@ ul {
   }
 }
 
-@media (max-width: 545px) {
+@media (max-width: var(--sm-screen)) {
   .footer {
     padding: 1rem 2rem;
   }

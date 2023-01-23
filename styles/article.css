@@ -59,7 +59,7 @@ main {
   text-align: right;
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--md-screen)) {
   .article-column {
     width: 100%;
   }
@@ -76,7 +76,7 @@ main {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: var(--md-screen)) {
   .nav-links ul li {
     width: 125px;
     text-align: center;
