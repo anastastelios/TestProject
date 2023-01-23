@@ -35,6 +35,7 @@ main {
 .article-column p {
   font-weight: 300;
   text-align: justify;
+  word-break: break-all;
 }
 
 .article-column p img {
